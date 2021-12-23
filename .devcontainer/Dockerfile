@@ -1,4 +1,6 @@
-FROM hashicorp/terraform:1.1.2
+ARG TF_VERSION
+
+FROM hashicorp/terraform:${TF_VERSION}
 
 LABEL maintainer="Shashindran Vijayan"
 
