@@ -1,0 +1,14 @@
+// https://aka.ms/devcontainer.json
+{
+  "name": "Terraform",
+  "build": {
+    "context": "../.",
+    "dockerfile": "../Dockerfile"
+  },
+  "workspaceMount": "source=${localWorkspaceFolder},target=/usr/src/app,type=bind,consistency=cached",
+  "workspaceFolder": "/usr/src/app",
+  "settings": {},
+  "extensions": [
+    "hashicorp.terraform",
+  ],
+}
